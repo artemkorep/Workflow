@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 WORKDIR /app
 COPY src ./src
 
-ENTRYPOINT [ "python", "-m", "src.main" ]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80"]
