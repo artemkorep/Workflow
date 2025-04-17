@@ -1,3 +1,44 @@
-venv/
+# Python
 __pycache__/
+*.py[cod]
+*.egg-info/
 .pytest_cache/
+.mypy_cache/
+
+# Виртуальные окружения
+venv/
+.env/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
+
+# Локальные настройки
+.env
+.env.local
+.env.development
+.env.test
+
+# Файлы ОС
+Thumbs.db
+Desktop.ini
+
+# Сборки и дистрибутивы
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.egg
+
+# Docker
+docker-compose.yml
+*.dockerignore
+!Dockerfile  # если Dockerfile нужен в репозитории
